@@ -41,8 +41,12 @@ MedSecure-FortiNet/
 │
 ├── docs/
 │   ├── architecture/
-│   ├── screenshots/
-│   └── diagrams/
+│   │   └── network-topology.png
+│   ├── diagrams/
+│   │   ├── ipsec-communication-flow.png
+│   │   ├── ssl-vpn-medical-staff-flow.png
+│   │   └── patient-portal-flow.png
+│   └── screenshots/
 │
 ├── fortigate/
 │   └── README.md
@@ -108,6 +112,26 @@ FortiAnalyzer is used to centralize, monitor and analyze FortiGate security logs
 
 ![FortiAnalyzer Logs](docs/screenshots/fortianalyzer-logs.png)
 
+## Security Flows
+
+### Site-to-Site IPsec Communication
+
+This diagram illustrates the communication flow between the clinic and the remote laboratory through the site-to-site IPsec VPN.
+
+![IPsec Communication Flow](docs/diagrams/ipsec-communication-flow.png)
+
+### SSL-VPN Remote Access
+
+This diagram illustrates the secure remote-access flow for medical staff, including authentication, address assignment, policy enforcement and logging.
+
+![SSL-VPN Medical Staff Flow](docs/diagrams/ssl-vpn-medical-staff-flow.png)
+
+### Patient Portal Access
+
+This diagram illustrates the secure communication flow between a patient and the MediClinic patient portal.
+
+![Patient Portal Flow](docs/diagrams/patient-portal-flow.png)
+
 ## Validation
 
 The solution was validated through:
@@ -119,7 +143,7 @@ The solution was validated through:
 * Network service accessibility tests
 * FortiAnalyzer log collection and monitoring
 
-Screenshots and configuration evidence are provided throughout the repository.
+Screenshots, diagrams and configuration evidence are provided throughout the repository.
 
 ## Author
 
