@@ -1,1 +1,23 @@
+# Local and temporary files
+*.log
+*.tmp
+*.bak
 
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Environment and secrets
+.env
+*.key
+*.pem
+*.crt
+
+# Virtual machines
+*.ova
+*.ovf
+*.vmdk
