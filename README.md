@@ -34,12 +34,26 @@ The project was designed and deployed in a virtualized laboratory environment us
 * PNETLab
 * VMware
 
+## Skills Demonstrated
+
+* Network Security Architecture
+* Firewall Configuration & Security Policies
+* Network Segmentation with VLANs
+* Site-to-Site IPsec VPN
+* SSL-VPN Remote Access
+* Network Addressing & Routing
+* Security Logging & Monitoring
+* FortiAnalyzer Log Analysis
+* Virtualized Network Lab Deployment
+* Network Troubleshooting & Validation
+
 ## Project Structure
 
 ```text
 MedSecure-FortiNet/
 │
 ├── docs/
+│   ├── README.md
 │   ├── architecture/
 │   │   └── network-topology.png
 │   ├── diagrams/
@@ -49,7 +63,11 @@ MedSecure-FortiNet/
 │   └── screenshots/
 │
 ├── fortigate/
-│   └── README.md
+│   ├── README.md
+│   ├── clinique/
+│   │   └── README.md
+│   └── labo/
+│       └── README.md
 │
 ├── fortianalyzer/
 │   └── README.md
@@ -128,7 +146,7 @@ This diagram illustrates the secure remote-access flow for medical staff, includ
 
 ### Patient Portal Access
 
-This diagram illustrates the secure communication flow between a patient and the MediClinic patient portal.
+This diagram illustrates the communication flow between a patient and the MediClinic patient portal.
 
 ![Patient Portal Flow](docs/diagrams/patient-portal-flow.png)
 
