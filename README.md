@@ -22,7 +22,7 @@ The project was designed and deployed in a virtualized laboratory environment us
 
 ## Architecture
 
-![Network Architecture](docs/architecture/network-topology.png)
+![MedSecure-FortiNet Network Architecture](docs/architecture/network-topology.png)
 
 ## Technologies
 
