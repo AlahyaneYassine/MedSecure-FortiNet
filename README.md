@@ -17,8 +17,8 @@ The project was designed and deployed in a virtualized laboratory environment us
 * Secure remote access using SSL-VPN
 * DMZ architecture
 * Firewall security policies
-* Centralized logging with FortiAnalyzer 
-* Network monitoring and security analysis 
+* Centralized logging with FortiAnalyzer
+* Network monitoring and security analysis
 
 ## Architecture
 
@@ -61,29 +61,64 @@ MedSecure-FortiNet/
 └── README.md
 ```
 
-## Implementation
+## Implementation & Evidence
 
 ### VLAN Segmentation
 
 The network is divided into dedicated VLANs to isolate users, servers and management traffic.
 
+The FortiGate infrastructure was configured to support network segmentation and controlled communication between the different network zones.
+
+![FortiGate Clinic](docs/screenshots/fortigate-clinique.png)
+
+![FortiGate Laboratory](docs/screenshots/fortigate-labo.png)
+
+![Network Objects](docs/screenshots/network-objects.png)
+
+### Network & Server Configuration
+
+Network objects, application servers, patient-related resources and required services were configured according to the defined security architecture.
+
+![Server Application](docs/screenshots/server-app-admin.png)
+
+![Patient Records](docs/screenshots/patient-records.png)
+
+![MySQL Service](docs/screenshots/mysql-service-3306.png)
+
 ### IPsec VPN
 
-An IPsec tunnel securely connects the clinic and laboratory sites.
+An IPsec tunnel securely connects the clinic and laboratory sites, enabling controlled communication between the two infrastructures.
+
+![IPsec VPN](docs/screenshots/ipsec-tunnel.png)
 
 ### SSL-VPN
 
 SSL-VPN provides secure remote access for authorized medical staff.
 
-### FortiAnalyzer
+The configuration includes the dedicated SSL-VPN address pool and access configuration.
 
-FortiAnalyzer is used to centralize, monitor and analyze security logs.
+![SSL-VPN Configuration](docs/screenshots/ssl-vpn-config.png)
+
+![SSL-VPN Address Pool](docs/screenshots/ssl-vpn-pool.png)
+
+### FortiAnalyzer & Security Monitoring
+
+FortiAnalyzer is used to centralize, monitor and analyze FortiGate security logs.
+
+![FortiAnalyzer Logs](docs/screenshots/fortianalyzer-logs.png)
 
 ## Validation
 
-The solution was validated through connectivity, VPN, firewall and logging tests.
+The solution was validated through:
 
-Screenshots and configuration evidence are provided in the repository.
+* Inter-VLAN connectivity tests
+* Site-to-site IPsec connectivity tests
+* SSL-VPN access tests
+* Firewall policy verification
+* Network service accessibility tests
+* FortiAnalyzer log collection and monitoring
+
+Screenshots and configuration evidence are provided throughout the repository.
 
 ## Author
 
