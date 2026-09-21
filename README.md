@@ -45,18 +45,19 @@ MedSecure-FortiNet/
 │   └── diagrams/
 │
 ├── fortigate/
-│   ├── clinique/
-│   └── labo/
+│   └── README.md
 │
 ├── fortianalyzer/
+│   └── README.md
 │
 ├── vpn/
-│   ├── ipsec/
-│   └── ssl-vpn/
+│   └── README.md
 │
 ├── network/
 │   ├── vlan/
+│   │   └── README.md
 │   └── ip-plan/
+│       └── README.md
 │
 └── README.md
 ```
