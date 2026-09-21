@@ -18,7 +18,7 @@ The project was designed and deployed in a virtualized laboratory environment us
 * DMZ architecture
 * Firewall security policies
 * Centralized logging with FortiAnalyzer
-* Network monitoring and security analysis
+* Network monitoring and security analysis 
 
 ## Architecture
 
